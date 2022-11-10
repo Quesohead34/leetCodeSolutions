@@ -16,7 +16,10 @@ let twoSum = function (nums, target) {
     for (let i = 0; i < nums.length; i++) {
         // traverse immidiate next elem
         for (let j = i + 1; j < nums.length; j++) {
-
+            // evaluate if elems add to target and return both indicies in arr if true
+            if (nums[i] + nums[j] === target) {
+                return [i, j]
+            }
         }
     }
 };
