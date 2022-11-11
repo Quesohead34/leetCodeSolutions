@@ -13,5 +13,7 @@
 // [-1,2,1];
 
 var isPalindrome = function (x) {
-
+    // converted input to str & split each char then reversed and joined back to arr
+    // also compared reversed arr w original using non strict equal as two dif data types
+    return x.toString().split('').reverse().join('') == x ? true : false;
 }
