@@ -15,5 +15,12 @@ function ListNode(val, next) {
 
 
 var reverseList = function (head) {
+    // start by defining two pointers what new prev node is and what current will be
+    let prev = null;
+    let current = head;
+    while (current) {
 
+    }
+    // return new head of LL which will end up being prev
+    return prev;
 };
